@@ -1,0 +1,12 @@
+### Get all contacts
+GET http://localhost:3000/contacts
+
+### Jane Doe
+GET http://localhost:3000/contacts/66f8d021ca1222a311fa27db
+
+### Sam Smith
+GET http://localhost:3000/contacts/66f8d021ca1222a311fa27dc
+
+### Alice Johnson
+GET http://localhost:3000/contacts/66f8d021ca1222a311fa27dd
+

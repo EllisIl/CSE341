@@ -1,7 +1,8 @@
 const express = require('express');
 const app = express();
 
-const port = 3000;
+const contactsRouter = require('./routes/contacts');
+app.use('/contacts', contactsRouter);
 
 app.use('/', require('./routes'));
  

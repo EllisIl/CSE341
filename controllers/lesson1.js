@@ -1,4 +1,3 @@
-
 const mainRoute = (req, res) => {
     res.send("Elijah Foard");
 };
