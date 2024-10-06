@@ -1,12 +1,41 @@
-### Get all contacts
-GET http://localhost:3000/contacts
+### Create a new contact
+POST http://localhost:8080/api/contacts
+Content-Type: application/json
 
-### Jane Doe
-GET http://localhost:3000/contacts/66f8d021ca1222a311fa27db
+{
+    "firstName": "Alice",
+    "lastName": "Smith",
+    "email": "alice.smith@example.com",
+    "favoriteColor": "red",
+    "birthday": "1990-01-01"
+}
 
-### Sam Smith
-GET http://localhost:3000/contacts/66f8d021ca1222a311fa27dc
+### Create another contact
+POST http://localhost:8080/api/contacts
+Content-Type: application/json
 
-### Alice Johnson
-GET http://localhost:3000/contacts/66f8d021ca1222a311fa27dd
+{
+    "firstName": "Bob",
+    "lastName": "Johnson",
+    "email": "bob.johnson@example.com",
+    "favoriteColor": "blue",
+    "birthday": "1992-05-15"
+}
 
+### Retrieve all contacts to get their IDs
+GET http://localhost:8080/api/contacts
+
+### Update an existing contact
+PUT http://localhost:8080/api/contacts/6701ff1f2b29acc6559a1d7c
+Content-Type: application/json
+
+{
+    "firstName": "Alice",
+    "lastName": "Smith",
+    "email": "alice.smith@newmail.com",
+    "favoriteColor": "green",
+    "birthday": "1990-01-01"
+}
+
+### Delete an existing contact
+DELETE http://localhost:8080/api/contacts/6701ff312b29acc6559a1d7d
